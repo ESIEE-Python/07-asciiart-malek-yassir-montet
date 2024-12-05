@@ -2,6 +2,7 @@ import sys
 import os
 import pytest
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.setrecursionlimit(1500)
 from main import artcode_i, artcode_r
 
 WWF_input = """
